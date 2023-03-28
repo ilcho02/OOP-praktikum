@@ -39,7 +39,7 @@ VendingMachine::VendingMachine(){
     salty=0;
     sweet=0;
     drinks=0;
-    id=uniqueID++;
+    id=0;
     address=nullptr;
     warningsCount=0;
     warningsCapacity=8;
@@ -100,7 +100,7 @@ void VendingMachine::sellProducts(int salty2,int sweet2,int drinks2){
 
 
 VendingMachine::VendingMachine(const int salty, const int sweet, const int drinks, const char* setAddress): salty(salty), sweet(sweet), drinks(drinks){
-    id=uniqueID++;
+    id=0;
     address=new char[strlen(setAddress)+1];
     strcpy(address,setAddress);
     warningsCount=0;

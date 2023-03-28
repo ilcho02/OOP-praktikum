@@ -6,7 +6,6 @@
 #include<cstring>
 using namespace std;
 
-int uniqueID=0;
 
 class VendingMachine{
 private:
